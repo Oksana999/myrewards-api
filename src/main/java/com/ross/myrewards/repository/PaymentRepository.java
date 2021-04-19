@@ -17,4 +17,6 @@ public interface PaymentRepository extends JpaRepository<Payment, Long> {
     @Query("SELECT p FROM Payment p JOIN p.user u WHERE u.userId = :id AND p.createdAt >= :from AND p.createdAt < :till")
     List<Payment> findByUserIdInTimeRange(Long id, Long from, Long till);
 
+
+
 }

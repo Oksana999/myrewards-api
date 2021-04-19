@@ -25,7 +25,6 @@ public class UserController {
 
     @GetMapping("by-id")
     public Optional<User> getUserById(@RequestParam Long id) {
-
         return userRepository.findById(id);
     }
 

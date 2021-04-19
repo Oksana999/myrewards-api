@@ -35,4 +35,5 @@ public class RewardController {
                 .map(amount ->  max((amount - 50), 0) + max((amount - 100), 0))
                 .reduce(0L, (a, b) -> a + b);
     }
+
 }
